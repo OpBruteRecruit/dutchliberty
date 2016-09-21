@@ -129,7 +129,7 @@ def Torshammergen():
 
 	#preconfigured 
 	PYTHON = "python "
-	PATH = "/root/dutchliberatio"
+	PATH = "/root/dutchliberty"
 	TORSHAMMER = "/torshammer.py "
 	char1 = "-t "
 	char2 = "-r "
