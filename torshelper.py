@@ -6,7 +6,7 @@ root = Tk()
 app = Frame(root)
 app.grid
 root.title("Torshelper")
-root.geometry("255x400")
+root.geometry("320x400")
 
 
 
@@ -146,7 +146,7 @@ def Torshammergen():
 	 char4 = " "
 
 	#main output
-	OUTPUT = (PYTHON) + (PATH) + (TORSHAMMER) + (char1) + (input1) + (char2) + (input2) + (char3) + (input3) + (char4) + (input4)
+	OUTPUT = (PYTHON) + (PATH) + (TORSHAMMER) + (char1) + (input1) + (char2) + (input2) + " " + (char3) + (input3) + (char4) + (input4)
 	Text.delete(0.0,END)
 	Text.insert(0.0,OUTPUT)
 
