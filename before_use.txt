@@ -1,0 +1,2 @@
+before use you might install python 2.7 or higher 
+NOT python 3

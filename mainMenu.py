@@ -1,6 +1,6 @@
 from Tkinter import *
 root = Tk()
-root.title("dutchliberty BETA (V=1.1)")
+root.title("dutchliberty BETA (V=1.2)")
 app = Frame(root)
 app.grid
 
@@ -20,7 +20,7 @@ empty1.grid(row = 2, column = 1, sticky = W)
 label2= Label(root,text = "VOOR UPDATES STANDAART -> UPDATE: ")
 label2.grid(row = 3, column = 1, sticky = W)
 
-output1 = Text(root,width = 47, height = 1,wrap = NONE)
+output1 = Text(root, foreground="white", background="black", highlightcolor="white", highlightbackground="white", width = 47, height = 1,wrap = NONE)
 output1.grid(row = 4, column = 0, columnspan = 15, sticky = W)
 output1.insert(0.0,GIT + LINK)
 
@@ -30,7 +30,7 @@ empty2.grid(row = 5, column = 1, sticky = W)
 label3 = Label(root,text = "voor elke nieuwe applicatie commando kopieer en plak:")
 label3.grid(row = 6, column = 1, sticky = W)
 
-output2 = Text(root,width = 47, height = 1,wrap = NONE)
+output2 = Text(root, foreground="white", background="black", highlightcolor="white", highlightbackground="white", width = 47, height = 1,wrap = NONE)
 output2.grid(row = 7, column = 0, columnspan = 15, sticky = W)
 output2.insert(0.0,NEW)
 
@@ -40,7 +40,7 @@ empty2.grid(row = 8, column = 1, sticky = W)
 label3 = Label(root,text = "kopieer en plak naar nieuw terminaal:")
 label3.grid(row = 9, column = 1, sticky = W)
 
-output3 = Text(root,width = 47, height = 1,wrap = NONE)
+output3 = Text(root, foreground="white", background="black", highlightcolor="white", highlightbackground="white", width = 47, height = 1,wrap = NONE)
 output3.grid(row = 10, column = 0, columnspan = 15, sticky = W)
 
 empty3 = Label(root,text = " ")
@@ -114,13 +114,33 @@ def TorsHelper():
  output3.insert(0.0,Torshelper)
 
 def TorsHammer():
- print"[-] Generating torshammer.py route"
+ print"[-] Generating polyris.py route"
  print"[-] NOTE: this is a thirt party product"
  print"[-] NOTE: torshelper is adviced for un expirienced users"
  print"[-] NOTE: all files must be in  right directory"
  Torshammer = (DEFAULT) + "/root/dutchliberty/torshammer.py"
  output3.delete(0.0,END)
  output3.insert(0.0,Torshammer)
+
+
+def mainpyloris():
+ print"[-] Generating torshammer.py route"
+ print"[-] NOTE: this is a thirt party product"
+ print"[-] NOTE: all files must be in  right directory"
+ MAINPYLORIS = (DEFAULT) + "/root/dutchliberty/pyloris.py"
+ output3.delete(0.0,END)
+ output3.insert(0.0,MAINPYLORIS)
+
+def torpyloris():
+ print"[-] Generating torshammer.py route"
+ print"[-] NOTE: this is a thirt party product"
+ print"[-] NOTE: torshelper is adviced for un expirienced users"
+ print"[-] NOTE: all files must be in  right directory"
+ TORPYLORIS = (DEFAULT) + "/root/dutchliberty/tor_switcher.py"
+ output3.delete(0.0,END)
+ output3.insert(0.0,TORPYLORIS)
+
+
 
 def KALIdefaults():
  rootkali = Tk()
@@ -226,6 +246,11 @@ submenu.add_separator()
 
 submenu.add_command(label = "Torshelper: makelijke tool voor Torshammer",command=TorsHelper)
 submenu.add_command(label = "Torshammer: DDOS AANVAL 3ps)",command=TorsHammer)
+
+submenu.add_separator()
+
+submenu.add_command(label = "pyloris DDOS AANVAL 3ps",command=mainpyloris)
+submenu.add_command(label = "TORSSWITCHER pyloris door tor 3ps)",command=torpyloris)
 
 
 defaultsmenu.add_command(label = "kali linux",command=KALIdefaults)

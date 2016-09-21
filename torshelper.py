@@ -23,8 +23,7 @@ def officialhelp():
 
  OFFICIALHELPtext ="/*\n * Tor's Hammer \n * Slow POST DoS Testing Tool\n * entropy [at] phiral.net\n * Anon-ymized via Tor\n * We are Legion.\n */\n\n./torshammer.py -t <target> [-r <threads> -p <port> -T -h]\n-t|--target <Hostname|IP>\n-r|--threads <Number of threads> Defaults to 256\n-p|--port <Web Server Port> Defaults to 80\n-T|--tor Enable anonymising through tor on 127.0.0.1:9050\n-h|--help Shows this help\n\nEg. ./torshammer.py -t 192.168.1.100 -r 256"
 
- ofhelpText = Text(officialhelproot,width = 60, height = 16, wrap = NONE)
-
+ ofhelpText = Text(officialhelproot, foreground="white", background="black", highlightcolor="white", highlightbackground="purple", wrap=NONE, height = 16, width = 60)
 
  ofhelpText.grid(row = 12, column = 0, columnspan = 2)
 
@@ -135,7 +134,7 @@ def Torshammergen():
 	char2 = "-r "
 	char3 = "-p "
 	char4 = ""
-
+	char5 = " "
 	
 	#space between input3 & input4(yes that fucked up little space gets 6 lines of code)
 	if input4 == "":
@@ -146,7 +145,7 @@ def Torshammergen():
 	 char4 = " "
 
 	#main output
-	OUTPUT = (PYTHON) + (PATH) + (TORSHAMMER) + (char1) + (input1) + (char2) + (input2) + " " + (char3) + (input3) + (char4) + (input4)
+	OUTPUT = (PYTHON) + (PATH) + (TORSHAMMER) + (char1) + (input1) + (char5) +(char2) + (input2) + (char5) + (char3) + (input3) + (char4) + (input4)
 	Text.delete(0.0,END)
 	Text.insert(0.0,OUTPUT)
 

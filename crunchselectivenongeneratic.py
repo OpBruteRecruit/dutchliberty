@@ -6,7 +6,7 @@ root = Tk()
 app = Frame(root)
 app.grid()
 root.title("woordenlijst lijn gen.  selectief niet gegenereerd ")
-root.geometry("780x360")
+root.geometry("790x360")
 
 
 #firts label
