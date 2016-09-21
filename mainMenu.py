@@ -6,7 +6,7 @@ app.grid
 
 
 GIT = "git clone "
-LINK = "https://github.com/OpBruteRecruit/OpBruteRecruit.git"
+LINK = "https://github.com/OpBruteRecruit/dutchliberty.git"
 DEFAULT = "python "
 NEW = "cd ~"
 print"[-] Sluit dit terminaal niet het programma zal crashen"
