@@ -69,7 +69,7 @@ def hardprintfirst():
 
 	#all preconfiguered carracters
 	car1 = " -o "
-	car2 = " /root/dutchliberation/wordlists/"
+	car2 = " /root/Desktop/"
 	car3 = ".txt"
 	OUTPUT = (input1) + (input2) + " " +(input3) + (car1) + (car2) + (input4) + (car3)
 	Text.delete(0.0,END)
