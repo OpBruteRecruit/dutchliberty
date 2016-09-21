@@ -139,14 +139,14 @@ def Torshammergen():
 	
 	#space between input3 & input4(yes that fucked up little space gets 6 lines of code)
 	if input4 == "":
-	 char5 = ""
+	 char4 = ""
 	elif input4 == "-T":
-	 char5 = " "
+	 char4 = " "
 	elif input4 == "--tor":
-	 char5 = " "
+	 char4 = " "
 
 	#main output
-	OUTPUT = (PATH) + (TORSHAMMER) + (char1) + (input1) + (char2) + (input2) + (char3) + (input3) + (char4) + (input4)
+	OUTPUT = (PYTHON) + (PATH) + (TORSHAMMER) + (char1) + (input1) + (char2) + (input2) + (char3) + (input3) + (char4) + (input4)
 	Text.delete(0.0,END)
 	Text.insert(0.0,OUTPUT)
 
